@@ -123,7 +123,8 @@ export default function Page() {
                   Check out my latest work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve worked on a variety of projects, check 'em out. Here are a few of my
+                  I&apos;ve worked on a variety of projects, from simple
+                  websites to complex web applications. Here are a few of my
                   favorites.
                 </p>
               </div>
@@ -157,14 +158,18 @@ export default function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  My Experiences
+                  Hackathons
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  I like learning things
+                  I like building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    Over the years, I've attended several conferences, career events, and professional growth workshops. All were eye-opening moments to see the endless possibilities that I could equip in my life.
-
+                  During my time in university, I attended{" "}
+                  {DATA.hackathons.length}+ hackathons. People from around the
+                  country would come together and build incredible things in 2-3
+                  days. It was eye-opening to see the endless possibilities
+                  brought to life by a group of motivated and passionate
+                  individuals.
                 </p>
               </div>
             </div>
@@ -201,13 +206,15 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to start a convo, do you have a question, or want to know my hottest unpopular opinion? Just shoot me an email {" "}
-              <Link
-                href="mailto:yhamu27@gmail.com"
-                className="text-blue-500 hover:underline"
+                Want to chat? Just shoot me a dm{" "}
+                <Link
+                  href={DATA.contact.social.X.url}
+                  className="text-blue-500 hover:underline"
                 >
-                here</Link>{" "}
-                and I&apos;ll respond whenever I have the chance.
+                  with a direct question on twitter
+                </Link>{" "}
+                and I&apos;ll respond whenever I can. I will ignore all
+                soliciting.
               </p>
             </div>
           </BlurFade>
