@@ -56,9 +56,9 @@ export const DATA = {
       },
       Youtube: {
         name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
+        url: "https://www.youtube.com/@yahyah2612",
         icon: Icons.youtube,
-        navbar: false,
+        navbar: true,
       },
       Resume: {
         name: "View Resume",
